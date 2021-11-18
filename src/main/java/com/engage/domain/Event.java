@@ -31,6 +31,9 @@ public class Event {
 	
     @Column(name="modeOpted", length=50, nullable=true)
 	private String modeOpted;
+
+    @Column(name="attendence", length=50, nullable=true)
+	private String attendence;
 	
 
     public Long getEventId() {
@@ -63,6 +66,14 @@ public class Event {
 
     public void setModeOpted(String modeOpted) {
         this.modeOpted = modeOpted;
+    }
+
+    public String getAttendence() {
+        return this.attendence;
+    }
+
+    public void setAttendence(String attendence) {
+        this.attendence = attendence;
     }
 	
 }

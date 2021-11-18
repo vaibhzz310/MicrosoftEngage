@@ -70,3 +70,43 @@ public class Student {
     }
 
 }
+
+//Sample JSON
+// [
+//   {
+//     "studentId": 4,
+//     "name": "Triya",
+//     "emailId": "triyabyadwal@gmail.com",
+//     "coursesOpted": [
+//       "CST103",
+//       "HST101"
+//     ]
+//   },
+//   {
+//     "studentId": 5,
+//     "name": "Vaibhav",
+//     "emailId": "vaibhav302000@gmail.com",
+//     "coursesOpted": [
+//       "CST103",
+//       "HST101"
+//     ]
+//   },
+//   {
+//     "studentId": 6,
+//     "name": "Abhinav",
+//     "emailId": "abhi.agg@gmail.com",
+//     "coursesOpted": [
+//       "CST103",
+//       "HST104"
+//     ]
+//   },
+//   {
+//     "studentId": 7,
+//     "name": "Aaditya",
+//     "emailId": "aadideep@gmail.com",
+//     "coursesOpted": [
+//       "ECE102",
+//       "HST101"
+//     ]
+//   }
+// ]

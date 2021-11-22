@@ -1,23 +1,17 @@
-package com.engage.domain;
-
-import java.sql.Date;
-import java.sql.Time;
+package com.engage.domain.helper_class;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Table(name="EventInformation")
-public class EventInformation {
 
-    public EventInformation() {
+public class DummyEventInformation {
+
+    public DummyEventInformation() {
     }
 
 	@Id
@@ -36,15 +30,15 @@ public class EventInformation {
 	@NotNull
     @Column(name="eventDate", length=50, nullable=false)
     @DateTimeFormat(pattern="dd/MM/yyyy")
-	private Date eventDate;
+	private String eventDate;
 	
 	@NotNull
     @Column(name="startTime", length=50, nullable=false)
-	private Time startTime;
+	private String startTime;
 
     @NotNull
     @Column(name="endTime", length=50, nullable=false)
-	private Time endTime;
+	private String endTime;
 
 	@NotNull
     @Column(name="capacity", length=50, nullable=false)
@@ -53,6 +47,7 @@ public class EventInformation {
 	@NotNull
     @Column(name="onlineClassLink", length=50, nullable=false)
 	private String onlineClassLink;
+
 
 
     public Long getEventInfoId() {
@@ -79,27 +74,27 @@ public class EventInformation {
         this.eventType = eventType;
     }
 
-    public Date getEventDate() {
+    public String getEventDate() {
         return this.eventDate;
     }
 
-    public void setEventDate(Date eventDate) {
+    public void setEventDate(String eventDate) {
         this.eventDate = eventDate;
     }
 
-    public Time getStartTime() {
+    public String getStartTime() {
         return this.startTime;
     }
 
-    public void setStartTime(Time startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public Time getEndTime() {
+    public String getEndTime() {
         return this.endTime;
     }
 
-    public void setEndTime(Time endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 
@@ -118,17 +113,6 @@ public class EventInformation {
     public void setOnlineClassLink(String onlineClassLink) {
         this.onlineClassLink = onlineClassLink;
     }
-	
 
 }
 
-// Sample JSON
-// {
-//     "courseCode":"CST103",
-//     "eventType":"Lecture",
-//     "eventDate":"20/11/2021",
-//     "startTime":12340,
-//     "endTime":12345,
-//     "capacity":50,
-//     "onlineClassLink":"https://meet.google.com/uoe-cnxz-tft"
-// }

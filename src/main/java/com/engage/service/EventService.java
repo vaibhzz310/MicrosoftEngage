@@ -43,6 +43,10 @@ public class EventService implements IService<Event> {
 		return eventRepository.findById(id).get();
 	}
 
+	public Collection<Event> findByStudentId(Long studentId) {
+		return eventRepository.findByStudentId(studentId);
+	}
+
 	@Override
 	public Event saveOrUpdate(Event event) {
 		return eventRepository.saveAndFlush(event);

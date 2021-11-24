@@ -123,12 +123,55 @@ public class EventInformation {
 }
 
 // Sample JSON
-// {
-//     "courseCode":"CST103",
-//     "eventType":"Lecture",
-//     "eventDate":"20/11/2021",
-//     "startTime":12340,
-//     "endTime":12345,
-//     "capacity":50,
-//     "onlineClassLink":"https://meet.google.com/uoe-cnxz-tft"
-// }
+// [
+//   {
+//     "eventInfoId": 5,
+//     "courseCode": "CST103",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "11:00:00",
+//     "endTime": "12:00:00",
+//     "capacity": 50,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 12,
+//     "courseCode": "HST101",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "15:00:00",
+//     "endTime": "16:00:00",
+//     "capacity": 25,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 16,
+//     "courseCode": "HST104",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "16:00:00",
+//     "endTime": "17:00:00",
+//     "capacity": 30,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 18,
+//     "courseCode": "ECE102",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-16",
+//     "startTime": "12:00:00",
+//     "endTime": "13:00:00",
+//     "capacity": 55,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 20,
+//     "courseCode": "ECE102",
+//     "eventType": "Tutorial",
+//     "eventDate": "2021-11-16",
+//     "startTime": "14:00:00",
+//     "endTime": "15:00:00",
+//     "capacity": 20,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   }
+// ]

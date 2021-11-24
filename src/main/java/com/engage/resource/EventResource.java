@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.engage.domain.Event;
+import com.engage.domain.helper_class.CompleteEventInformation;
 import com.engage.service.EventService;
 //import com.engage.resource.Resource;
 
@@ -41,6 +42,11 @@ public class EventResource {
 	@GetMapping("student"+"{studentId}")
 	public ResponseEntity<Collection<Event>> findByStudentId(@PathVariable Long studentId) {
 		return new ResponseEntity<>(eventService.findByStudentId(studentId), HttpStatus.OK);
+	}
+
+	@GetMapping("student{studentId}/{dateSunday}")
+	public ResponseEntity<Collection<CompleteEventInformation>> findByStudentId(@PathVariable Long studentId,@PathVariable String dateSunday) {
+		return new ResponseEntity<>(eventService.findByStudentIdAndWeek(studentId,dateSunday), HttpStatus.OK);
 	}
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)

@@ -74,39 +74,48 @@ public class Student {
 //Sample JSON
 // [
 //   {
-//     "studentId": 4,
+//     "studentId": 1,
 //     "name": "Triya",
 //     "emailId": "triyabyadwal@gmail.com",
 //     "coursesOpted": [
-//       "CST103",
-//       "HST101"
+//       "Algorithms",
+//       "Economics",
+//       "Mathematics",
+//       "Neural Networks"
 //     ]
 //   },
 //   {
-//     "studentId": 5,
+//     "studentId": 2,
 //     "name": "Vaibhav",
 //     "emailId": "vaibhav302000@gmail.com",
 //     "coursesOpted": [
-//       "CST103",
-//       "HST101"
+//       "Algorithms",
+//       "Economics",
+//       "Mathematics",
+//       "English",
+//       "Neural Networks",
+//       "Wireless"
 //     ]
 //   },
 //   {
-//     "studentId": 6,
+//     "studentId": 3,
 //     "name": "Abhinav",
-//     "emailId": "abhi.agg@gmail.com",
+//     "emailId": "abhi.agg20@gmail.com",
 //     "coursesOpted": [
-//       "CST103",
-//       "HST104"
+//       "Algorithms",
+//       "Sociology",
+//       "English",
+//       "Mathematics"
 //     ]
 //   },
 //   {
-//     "studentId": 7,
+//     "studentId": 9,
 //     "name": "Aaditya",
 //     "emailId": "aadideep@gmail.com",
 //     "coursesOpted": [
-//       "ECE102",
-//       "HST101"
+//       "Analog",
+//       "Economics",
+//       "Wireless"
 //     ]
 //   }
 // ]

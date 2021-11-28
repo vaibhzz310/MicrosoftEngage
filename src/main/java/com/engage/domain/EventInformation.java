@@ -125,38 +125,28 @@ public class EventInformation {
 // Sample JSON
 // [
 //   {
-//     "eventInfoId": 5,
-//     "courseCode": "CST103",
+//     "eventInfoId": 24,
+//     "courseCode": "Algorithms",
 //     "eventType": "Lecture",
-//     "eventDate": "2021-11-17",
-//     "startTime": "11:00:00",
-//     "endTime": "12:00:00",
+//     "eventDate": "2021-11-15",
+//     "startTime": "12:00:00",
+//     "endTime": "13:00:00",
 //     "capacity": 50,
 //     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
 //   },
 //   {
-//     "eventInfoId": 12,
-//     "courseCode": "HST101",
-//     "eventType": "Lecture",
-//     "eventDate": "2021-11-17",
-//     "startTime": "15:00:00",
-//     "endTime": "16:00:00",
-//     "capacity": 25,
-//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
-//   },
-//   {
-//     "eventInfoId": 16,
-//     "courseCode": "HST104",
-//     "eventType": "Lecture",
-//     "eventDate": "2021-11-17",
-//     "startTime": "16:00:00",
-//     "endTime": "17:00:00",
-//     "capacity": 30,
+//     "eventInfoId": 20,
+//     "courseCode": "Analog",
+//     "eventType": "Tutorial",
+//     "eventDate": "2021-11-16",
+//     "startTime": "14:00:00",
+//     "endTime": "15:00:00",
+//     "capacity": 20,
 //     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
 //   },
 //   {
 //     "eventInfoId": 18,
-//     "courseCode": "ECE102",
+//     "courseCode": "Analog",
 //     "eventType": "Lecture",
 //     "eventDate": "2021-11-16",
 //     "startTime": "12:00:00",
@@ -165,13 +155,123 @@ public class EventInformation {
 //     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
 //   },
 //   {
-//     "eventInfoId": 20,
-//     "courseCode": "ECE102",
-//     "eventType": "Tutorial",
-//     "eventDate": "2021-11-16",
-//     "startTime": "14:00:00",
-//     "endTime": "15:00:00",
+//     "eventInfoId": 5,
+//     "courseCode": "Algorithms",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "11:00:00",
+//     "endTime": "12:00:00",
+//     "capacity": 50,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 16,
+//     "courseCode": "Sociology",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "16:00:00",
+//     "endTime": "17:00:00",
+//     "capacity": 30,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 12,
+//     "courseCode": "Economics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-17",
+//     "startTime": "15:00:00",
+//     "endTime": "16:00:00",
+//     "capacity": 25,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 56,
+//     "courseCode": "Neural Networks",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-22",
+//     "startTime": "11:00:00",
+//     "endTime": "12:00:00",
+//     "capacity": 55,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 59,
+//     "courseCode": "Wireless",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-23",
+//     "startTime": "09:00:00",
+//     "endTime": "10:00:00",
+//     "capacity": 51,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 49,
+//     "courseCode": "Mathematics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-24",
+//     "startTime": "15:00:00",
+//     "endTime": "16:00:00",
+//     "capacity": 30,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 28,
+//     "courseCode": "Algorithms",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-25",
+//     "startTime": "12:00:00",
+//     "endTime": "13:00:00",
+//     "capacity": 50,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 70,
+//     "courseCode": "Mathematics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-26",
+//     "startTime": "11:00:00",
+//     "endTime": "12:00:00",
 //     "capacity": 20,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 53,
+//     "courseCode": "English",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-27",
+//     "startTime": "16:00:00",
+//     "endTime": "17:00:00",
+//     "capacity": 30,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 62,
+//     "courseCode": "Mathematics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-27",
+//     "startTime": "11:00:00",
+//     "endTime": "12:00:00",
+//     "capacity": 30,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 43,
+//     "courseCode": "Mathematics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-27",
+//     "startTime": "08:00:00",
+//     "endTime": "09:00:00",
+//     "capacity": 35,
+//     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
+//   },
+//   {
+//     "eventInfoId": 66,
+//     "courseCode": "Mathematics",
+//     "eventType": "Lecture",
+//     "eventDate": "2021-11-29",
+//     "startTime": "10:00:00",
+//     "endTime": "11:00:00",
+//     "capacity": 45,
 //     "onlineClassLink": "https://meet.google.com/uoe-cnxz-tft"
 //   }
 // ]

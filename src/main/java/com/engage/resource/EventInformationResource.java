@@ -1,8 +1,12 @@
 package com.engage.resource;
 
+import java.io.IOException;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.Collection;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,7 +46,9 @@ public class EventInformationResource  {
 	}
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<EventInformation> save(@RequestBody DummyEventInformation dummyEventInformation) {
+	public ResponseEntity<EventInformation> save(@RequestBody DummyEventInformation dummyEventInformation) throws AddressException, MessagingException, IOException {
+		//mapping values from DummyEventInformation to EventInformation
+		//Only the date and time have to converted from string to their actual types(to be stored in the database)
 		EventInformation eventInformation = new EventInformation();
 		eventInformation.setCourseCode(dummyEventInformation.getCourseCode());
 		eventInformation.setEventType(dummyEventInformation.getEventType());

@@ -25,22 +25,6 @@ public class EventService implements IService<Event> {
 	@Autowired
 	private EventInformationService eventInformationService;
 
-//	private Long bookId = 100L;
-//	private Map<Long, Book> bookMap = new HashMap<Long, Book>();
-//
-//	{
-//		Book book = new Book();
-//		book.setId(bookId);
-//		book.setTitle("Spring Microservices in Action");
-//		book.setAuthor("John Carnell");
-//		book.setCoverPhotoURL(
-//				"https://images-na.ssl-images-amazon.com/images/I/417zLTa1uqL._SX397_BO1,204,203,200_.jpg");
-//		book.setIsbnNumber(1617293989L);
-//		book.setPrice(2776.00);
-//		book.setLanguage("English");
-//		bookMap.put(book.getId(), book);
-//	}
-
 	@Override
 	public Collection<Event> findAll() {
 		return eventRepository.findAll();
@@ -62,6 +46,8 @@ public class EventService implements IService<Event> {
 		Collection<CompleteEventInformation> completeEvents = new ArrayList<CompleteEventInformation>();
 		for(Event event:events){
 			EventInformation eventInformation = eventInformationService.findById(event.getEventInfoId());
+			if(eventInformation==null)
+				continue;
 			Date eventDate=eventInformation.getEventDate();
 			if(eventDate.after(weekStart) && eventDate.before(weekEnd)){
 				CompleteEventInformation completeEvent =new CompleteEventInformation();
